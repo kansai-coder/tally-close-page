@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>完了</title>
+  <script>
+    function tryClose() {
+      window.open('', '_self');
+      window.close();
+    }
+    window.onload = tryClose;
+  </script>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px;
+      background: #f9f9f9;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: none;
+      background: black;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>送信完了しました</h2>
+  <p>自動で閉じない場合はボタンを押してください。</p>
+  <button onclick="tryClose()">閉じる</button>
+</body>
+</html>
